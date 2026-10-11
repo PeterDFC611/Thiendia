@@ -12,31 +12,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- BẢNG ĐĂNG NHẬP / ĐĂNG KÝ -->
-    <div id="auth-container">
-        <div class="auth-box">
-            <h2 id="auth-title">Đăng Nhập</h2>
-            <p class="auth-sub">Đăng nhập để vào trang web của bạn</p>
-            
-            <input type="text" id="username-input" placeholder="Nhập tên tài khoản..." autocomplete="off" />
-            <input type="password" id="password-input" placeholder="Nhập mật khẩu..." />
-            
-            <button id="auth-btn" onclick="handleAuth()">Đăng Nhập</button>
-            
-            <p id="toggle-text">
-                Chưa có tài khoản? <a href="#" onclick="toggleAuthMode()">Đăng ký ngay</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- NỘI DUNG CHÍNH (Ẩn khi chưa đăng nhập) -->
-    <div id="main-content" style="display: none;">
-        <!-- Nút đăng xuất & hiển thị tên user nổi bật ở góc -->
-        <div id="user-top-bar" style="position: fixed; top: 15px; right: 20px; z-index: 999; background: rgba(22, 22, 38, 0.9); padding: 8px 16px; border-radius: 20px; border: 1px solid #334155; display: flex; align-items: center; gap: 10px; font-family: sans-serif; font-size: 14px; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-            <span>Xin chào, <strong id="user-display-name" style="color: #a78bfa;">Khách</strong>!</span>
-            <button onclick="handleLogout()" style="background: #ef4444; color: white; border: none; padding: 5px 10px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 12px;">Đăng xuất</button>
-        </div>
-
   <div class="noise"></div>
   <header class="navbar">
     <a class="brand" href="#home"><span class="brand-mark">✳</span> MY FUTURE<span class="brand-dot">.</span></a>
@@ -138,7 +113,5 @@
 
   <footer><a class="brand" href="#home"><span class="brand-mark">✳</span> MY FUTURE<span class="brand-dot">.</span></a><span>Được tạo nên từ ước mơ, kế hoạch và những bước nhỏ.</span><span>© <span id="year"></span> — YOUR JOURNEY</span></footer>
   <script src="js/script.js"></script>
-
-    </div>
 </body>
 </html>
